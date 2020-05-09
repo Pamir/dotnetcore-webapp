@@ -39,7 +39,7 @@ jobs:
           dotnet build --configuration Release
           dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
       - name: Snyk
-        uses: snyk/actions@0.1.1
+        uses: snyk/actions@0.1.1/dotnet@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           
