@@ -18,7 +18,7 @@ steps:
   inputs:
     command: build
     projects: '**/*.csproj'
-    arguments: '--configuration Release' # Update this to match your need
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)' # Update this to match your need
 
 - task: PublishBuildArtifacts@1
   inputs:
