@@ -31,6 +31,7 @@ namespace dotnetcore_webapp
         {
             if (env.IsDevelopment())
             {
+                
                 app.UseDeveloperExceptionPage();
             }
             else
